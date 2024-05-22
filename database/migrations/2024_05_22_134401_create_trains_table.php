@@ -21,7 +21,7 @@ return new class extends Migration
             $table->dateTime('departure_time');
             $table->dateTime('arrival_time');
             $table->string('code', 255);
-            $table->integer('carriage', 2)->unsigned();
+            $table->tinyInteger('carriage')->unsigned();
             $table->boolean('in_time');
             $table->boolean('deleted');
             $table->timestamps();
